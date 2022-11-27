@@ -10,8 +10,8 @@ def index(request):
 
 # devolver un html 
 
-def ingreso(request):
-    return render(request,'gestion_tareas/ingreso.html', {
+def login(request):
+    return render(request,'gestion_tareas/login.html', {
         'nombre':'Roberto',
         'apellido':'Mendoza',
         'edad':'25'

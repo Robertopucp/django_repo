@@ -9,5 +9,5 @@ app_name = 'gestion_tareas'
 
 urlpatterns = [
     path('',views.index, name = 'index'),
-    path('ingreso',views.ingreso, name = 'ingreso')
+    path('login',views.login, name = 'login')
 ]
