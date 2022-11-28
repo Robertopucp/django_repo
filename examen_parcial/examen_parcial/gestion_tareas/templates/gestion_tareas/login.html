@@ -11,13 +11,15 @@
 
         <div>
             <h2>Bienvenido</h2>
-            <form>
+            <form method="post" action = "{% url 'gestion_tareas:login' %}"> <!-- Interaccuar con base de datos (inclusión de atributos)--> 
+            {% csrf_token %}    
                 <div>
-                    <input type="text">
+                    <input type="text" name = 'usuario'>
                 </div>
                 <div>
-                    <input type="text">
+                    <input type="text" name = 'password'>
                 </div>
+                <br>
                 <div>
                     <button type="submit">Login</button>
                 </div>

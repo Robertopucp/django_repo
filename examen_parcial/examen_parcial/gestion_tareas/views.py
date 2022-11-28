@@ -11,6 +11,12 @@ def index(request):
 # devolver un html 
 
 def login(request):
+
+    if request.method == 'POST':
+
+        usuario = request.POST.get('usuario')
+        password = request.POST.get('password')
+        print('El usuario es:', str(usuario))
     return render(request,'gestion_tareas/login.html', {
         'nombre':'Roberto',
         'apellido':'Mendoza',
