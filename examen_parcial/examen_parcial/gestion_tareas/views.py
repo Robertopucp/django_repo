@@ -1,5 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+from .models import usuario, tarea
+
 # Create your views here.
 
 # todas las funciones en django requieren el parametro request 
